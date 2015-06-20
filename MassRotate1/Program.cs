@@ -66,7 +66,7 @@ namespace MassRotate
 
 			if (args.Length != 7)
 			{
-				ExitError("Invalid amount of paramters.\nPlease take a look on the readme for more information.");
+				ExitError("Invalid amount of parameters.\nPlease take a look on the readme for more information.");
 			}
 
 			int gfxFormat = ParseInteger(args[1].ToLower().Replace("bpp", ""));
@@ -307,7 +307,7 @@ namespace MassRotate
 
 				if (bmp.Size.Width % 8 != 0)
 				{
-					throw new Exception("The Bitmap must be multiple of 8.");
+					throw new Exception("The Bitmap must be a multiple of 8.");
 				}
 
 				size = bmp.Size.Width;
